@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
         res.json(userData);
     }catch(err){
         console.log(err);
-        res.status(500).json(err);
+        res.status(500).json({ message: 'An error occured'});
     }
   });
 

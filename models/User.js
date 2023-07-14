@@ -14,6 +14,10 @@ User.init(
             type: DataTypes.STRING,
             allowNull: false
         },
+        password: {
+            type: DataTypes.STRING,
+            allowNull: false,
+          },
         Playlist_Name:{
             type: DataTypes.STRING,
         }
