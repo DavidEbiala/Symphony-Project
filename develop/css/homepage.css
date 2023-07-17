@@ -32,7 +32,7 @@
 }
 
 body {
-  background-image: url(/Symphony-Project/develop/img/good_times_with_bad_music_1050x700.webp);
+  background-image: url('/img/good_times_with_bad_music_1050x700.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

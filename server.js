@@ -16,7 +16,7 @@ app.use('/api/users', usersRoutes);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(routes);
-
+app.use(express.static("develop"))
 sequelize.sync().then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
