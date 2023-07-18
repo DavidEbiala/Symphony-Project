@@ -8,16 +8,17 @@ Playlist.init(
         id:{
             type: DataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            allowNull: false
         },
         Playlist_Name:{
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            references:{
+                model: 'user',
+                key: 'user_id'
+            }
         },
-        song:{
-            type: DataTypes.STRING,
-            allowNull: false
-        }
     },
     {
         sequelize,
